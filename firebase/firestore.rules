@@ -1,0 +1,19 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /exercises/{exerciseId} {
+      allow read: if resource.data.status == 'published';
+      allow write: if false;
+    }
+
+    match /attempts/{attemptId} {
+      allow create: if request.resource.data.exerciseId is string
+        && request.resource.data.subjectId in ['matematica', 'fisica', 'quimica']
+        && request.resource.data.selectedOptionId is string
+        && request.resource.data.isCorrect is bool
+        && request.resource.data.elapsedMilliseconds is int
+        && request.resource.data.elapsedMilliseconds >= 0;
+      allow read, update, delete: if false;
+    }
+  }
+}

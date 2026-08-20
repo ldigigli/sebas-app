@@ -1,0 +1,1 @@
+{"firestore":{"rules":"firebase/firestore.rules"},"emulators":{"firestore":{"port":8080},"auth":{"port":9099}},"flutter":{"platforms":{"dart":{"lib/firebase_options.dart":{"projectId":"sebas-app-dev","configurations":{"android":"1:81354618966:android:43e4bf745f60bd9399a3f7","ios":"1:81354618966:ios:b70b4ca0d259fca199a3f7","web":"1:81354618966:web:79bd6166c26440ec99a3f7"}}}}}}

@@ -1,0 +1,19 @@
+{
+  "id": "demo-matematica",
+  "subjectId": "matematica",
+  "status": "published",
+  "statementLatex": "\\text{Resuelve: } 2x + 4 = 10",
+  "options": [
+    {"id": "a", "labelLatex": "x = 2"},
+    {"id": "b", "labelLatex": "x = 3"},
+    {"id": "c", "labelLatex": "x = 4"},
+    {"id": "d", "labelLatex": "x = 5"}
+  ],
+  "correctOptionId": "b",
+  "distractorHints": {
+    "a": "\\text{Revisa la resta antes de dividir.}",
+    "c": "\\text{Comprueba el resultado sustituyendo } x.",
+    "d": "\\text{Divide ambos lados por el coeficiente de } x."
+  },
+  "stepByStepLatex": ["2x + 4 = 10", "2x = 6", "x = 3"]
+}
